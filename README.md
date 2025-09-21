@@ -1,7 +1,7 @@
 
 <h1 align='center'> <img width=32 src='icon.png'> Ahom Translator</h1>
 <p align='center'>
-    <img src="ahom_translator.PNG'><br>
+    <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.PNG?raw=true'><br>
     A Simple Ahom Translator with PyQT6 & BeautifulSoup4
 </p>
 
