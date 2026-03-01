@@ -2,7 +2,9 @@
 <h1 align='center'> <img width=32 src='icon.png'> Ahom Translator</h1>
 <p align='center'>
     <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.PNG?raw=true"><br>
-    A Simple Ahom Translator with PyQT6 & BeautifulSoup4
+    Old Version<br>
+    <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.jpg?raw=true"><br>
+    Old Version
 </p>
 
 ## Synopsis
