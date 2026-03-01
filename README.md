@@ -2,9 +2,9 @@
 <h1 align='center'> <img width=32 src='icon.png'> Ahom Translator</h1>
 <p align='center'>
     <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.PNG?raw=true"><br>
-    Old Version<br>
+    Old Version - (desktop font only)<br><br>
     <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom-translator.jpg?raw=true"><br>
-    New Version
+    New Version - Just enter unicode
 </p>
 
 ## Synopsis
