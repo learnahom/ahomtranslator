@@ -3,8 +3,8 @@
 <p align='center'>
     <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.PNG?raw=true"><br>
     Old Version<br>
-    <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom_translator.jpg?raw=true"><br>
-    Old Version
+    <img src="https://github.com/learnahom/ahomtranslator/blob/main/ahom-translator.jpg?raw=true"><br>
+    New Version
 </p>
 
 ## Synopsis
