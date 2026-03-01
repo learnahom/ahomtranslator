@@ -6,6 +6,28 @@ import qdarkstyle
 import threading
 import re 
 
+import sys
+from PySide6.QtWidgets import QApplication, QLabel
+from PySide6.QtGui import QFontDatabase, QFont
+
+app = QApplication(sys.argv)
+
+font_path = r"NotoSerifAhom-Regular.ttf"
+
+font_id = QFontDatabase.addApplicationFont(font_path)
+
+print("Font ID:", font_id)
+
+if font_id == -1:
+    print("Font failed to load")
+else:
+    families = QFontDatabase.applicationFontFamilies(font_id)
+    print("Loaded font:", families)
+
+    font = QFont(families[0], 11)
+    areafont = QFont(families[0], 10)
+
+
 dictionary={}
 
 def toAhomUnicode(x):
@@ -146,12 +168,15 @@ class MainWindow(QMainWindow):
         self.rows =[] # to store result
         self.entry = QLineEdit(self)
         self.entry.setPlaceholderText("Type any sentence here")
+        self.entry.setFont(font)
+        self.entry.setMaximumHeight(35)
         btn = QPushButton('Translate',self)
         btn.setStyleSheet('color:rgb(55,54,59);background-color: rgb(68,138,255);')
         self.entry.setMinimumHeight(35)
         btn.setMinimumHeight(35)
         
         self.textArea = QTextEdit(self)
+        self.textArea.setFont(areafont)
         self.textArea.setMinimumWidth(600)
         self.textArea.setMinimumHeight(400)
 
@@ -194,9 +219,7 @@ class MainWindow(QMainWindow):
         self.textArea.setText(output)
         
 if __name__=='__main__':
-    app=QApplication([])
     app.setStyleSheet(qdarkstyle.load_stylesheet('pyside6'))
     win=MainWindow()
     win.show()
-
     app.exec()
